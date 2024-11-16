@@ -1,0 +1,70 @@
+body {
+    font-family: monospace;
+    background-image: linear-gradient(rgba(123, 123, 123, 0.7),rgba(142, 142, 142, 0.7)), url(Media/bg_1.jpg);
+}
+.container {
+    width: 90px;
+    padding: 20px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.team{
+    margin-top: 150px;
+    padding-bottom: 100px;
+}
+h1{
+    font-size: 45px;
+    color: white;
+    -webkit-text-stroke:1.5px #000000;
+}
+h4{
+    font-style: italic;
+    font-size: 27px;
+    color: white;
+    -webkit-text-stroke:1.5px #000000;
+}
+.box {
+    position: relative;
+    width: 250px;
+    margin: 0 10px;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.box img {
+    object-fit: cover;
+}
+
+.box .image-text {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    -webkit-text-stroke: 1px  #000000
+}
+
+.box:hover {
+    z-index: 1;
+    transform: scale(1.25);
+    box-shadow: 0 25px 40px rgba(0, 0, 0, .7);
+    filter: none; 
+    
+}
+
+.box:hover .image-text {
+    opacity: 1;
+    
+}
+.image_2{
+    width: 200px;
+}
+footer{
+    margin-top: 780px;
+}

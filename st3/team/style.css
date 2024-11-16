@@ -1,0 +1,153 @@
+body{
+    margin: 0;
+    background-color:  rgb(162, 158, 158);
+    font-family: monospace;
+}
+
+/*Navigation Bar*/
+.full-nav-bar {
+    outline: 2px solid black;
+    margin: 0; 
+    padding: 10px 20px; 
+    top: 10px;
+    left: 5px; 
+    right: 15px;
+    width: 100%; 
+    position: fixed;
+    z-index: 999;
+    background-color: rgba(3, 93, 59, 0.796); 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+  
+.logo {
+    width: auto; 
+    max-width: 400px; 
+    height: auto; 
+    transition: 0.5s ease-in-out;
+}
+  
+.logo:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+  
+.nav_position {
+    display: flex; 
+    flex-grow: 1; 
+}
+  
+.ul {
+    border: none; 
+    height: auto; 
+    padding: 0; 
+    text-align: center; 
+    list-style: none; 
+    background-color: transparent; 
+    display: flex; 
+    justify-content: space-evenly; 
+}
+  
+.ul li {
+    display: inline-block; 
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    bottom: 5px;
+}
+  
+.ul li a {
+    border-radius: 10px;
+    display: block;
+    padding: 15px 12px; 
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px; 
+    transition: 0.5s ease-in-out;
+}
+  
+.ul li ul.dropdown li {
+    top: 30px; 
+    height: 55px;
+    outline: 2px solid black; 
+    display: block;
+    background-color: rgb(3, 93, 59, 0.796); 
+}
+  
+.ul li ul.dropdown {
+    width: 100%; 
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+  
+.ul li a:hover {
+    background-color: black; 
+    transform: scale(1.1);
+}
+  
+.ul li:hover ul.dropdown {
+    display: block;
+}
+  
+.ul li a:active {
+    color: black;
+    background-color: black;
+    font-weight: bold;
+}
+  
+.user-profile {
+    border-radius: 15px;
+    position: relative;
+    right: -325px;
+    position: absolute;
+    right: 60px;
+    top: 10px;
+    padding: 19px 15px 21px 15px;
+    transition: 0.5s ease-in-out;
+}
+  
+.user-profile:hover {
+    cursor: pointer;
+    size: larger;
+    background-color: black;
+    transform: scale(1.1);
+}
+  
+/* Media for Responsiveness */
+@media (max-width: 765px) {
+.full-nav-bar {
+    flex-direction: column; /* Stack elements vertically on small screens */
+}
+.logo {
+    margin-bottom: 10px; /* Add space after logo on small screens */
+}
+.nav_position {
+    flex-direction: column; /* Stack navigation links vertically on small screens */
+}
+.ul {
+    flex-direction: column; /* Stack navigation links vertically on small screens */
+}
+.ul li {
+    display: block; /* Change to block for vertical stacking */
+}
+.user-profile {
+    position: absolute;
+    bottom: 10px; 
+    right: 10px; 
+}
+}
+
+
+/*Footer*/
+footer{
+    background-color: #1c1225b9;
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: -30px;
+    padding-right: -30px;
+  
+}
